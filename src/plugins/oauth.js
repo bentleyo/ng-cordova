@@ -58,7 +58,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -143,7 +143,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -231,7 +231,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -319,7 +319,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -406,7 +406,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -451,7 +451,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                             .error(function(data, status) {
                                 deferred.reject("Problem authenticating");
                             })
-                            .finally(function() {
+                            ['finally'](function() {
                                 setTimeout(function() {
                                     browserRef.close();
                                 }, 10);
@@ -549,7 +549,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                                             .error(function(error) {
                                                 deferred.reject(error);
                                             })
-                                            .finally(function() {
+                                            ['finally'](function() {
                                                 setTimeout(function() {
                                                     browserRef.close();
                                                 }, 10);
@@ -704,7 +704,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                                 .error(function(data, status) {
                                     deferred.reject("Problem authenticating");
                                 })
-                                .finally(function() {
+                                ['finally'](function() {
                                     setTimeout(function() {
                                         browserRef.close();
                                     }, 10);
@@ -841,7 +841,7 @@ angular.module("ngCordova.plugins.oauth", ["ngCordova.plugins.oauthUtility"])
                                         .error(function(error) {
                                             deferred.reject(error);
                                         })
-                                        .finally(function() {
+                                        ['finally'](function() {
                                             setTimeout(function() {
                                                 browserRef.close();
                                             }, 10);
